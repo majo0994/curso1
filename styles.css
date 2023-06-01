@@ -24,9 +24,17 @@ body{
     height: 100vh;
 }
 
+.email {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
 .form-container {
     display: grid;
     grid-template-rows: auto 1fr auto;
+    justify-items: center;
     width: 300px;
 }
 
@@ -87,6 +95,41 @@ body{
     font-weight: 700;
     color: var(--white);
     background-color: var(--hospital-green);
+    cursor: pointer;
+}
+
+.icon-background{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+    background-color: var(--text-input-field);
+}
+
+.icon {
+    width: 100px;
+    justify-self: center;
+    width: 90px;
+}
+
+.problem {
+    text-align: center;
+    font-size: var(--sm);
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: var(--very-light-pink);
+}
+
+.link {
+    text-align: center;
+    font-size: var(--sm);
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: var(--hospital-green);
     cursor: pointer;
 }
 
