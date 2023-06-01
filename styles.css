@@ -51,6 +51,12 @@ body{
     color: var(--black);
 }
 
+.title-2 {
+    text-align: start;
+    font-size: var(--lg);
+    color: var(--black);
+}
+
 .subtitle {
     text-align: center;
     font-size: var(--md);
@@ -150,11 +156,17 @@ body{
     cursor: pointer;
 }
 
+
+
 @media (max-width: 821px) {
     .logo {
        display: block;
     }
     .secondary-button {
+        position: absolute;
+        bottom: 10px;
+    }
+    .create-button {
         position: absolute;
         bottom: 10px;
     }
