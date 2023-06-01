@@ -89,6 +89,18 @@ body{
     border: none;
     background-color: var(--text-input-field);
 }
+
+.value {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    width: 290px;
+    font-size: var(--md);
+    border-radius: 8px;
+    margin-bottom: 18px;
+    border: none;
+    background-color: var(--text-input-field);
+}
     
 .primary-button {
     width: 290px;
