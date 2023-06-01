@@ -1,0 +1,15 @@
+:root {
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #acd9b2;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Quicksand:wght@300;500;700&display=swap');
+
+:body {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
