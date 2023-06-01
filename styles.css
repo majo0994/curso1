@@ -62,7 +62,8 @@ body{
 .form {
     display: flex;
     flex-direction: column;
-    width: 270px;
+    justify-content: center;
+    width: 290px;
 }
 
 .label {
@@ -89,8 +90,8 @@ body{
     border-radius: 8px;
     border: none;
     margin-top: 24px;
+    margin-bottom: 16px;
     font-size: var(--md);
-    font-family: 'Kanit', sans-serif;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     color: var(--white);
@@ -128,13 +129,33 @@ body{
     text-align: center;
     font-size: var(--sm);
     font-weight: 500;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
+    margin-top: 16px;
     color: var(--hospital-green);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.secondary-button {
+    width: 290px;
+    height: 48px;
+    border-radius: 8px;
+    border: 2px solid var(--hospital-green);
+    margin-top: 100px;
+    font-size: var(--md);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: var(--hospital-green);
+    background-color: var(--white);
     cursor: pointer;
 }
 
 @media (max-width: 821px) {
     .logo {
        display: block;
+    }
+    .secondary-button {
+        position: absolute;
+        bottom: 10px;
     }
 }
