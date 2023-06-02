@@ -168,7 +168,73 @@ body{
     cursor: pointer;
 }
 
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    place-content: center;
+    justify-items: center;
+    gap: 20px;
+    grid-auto-flow: row;
+}
 
+.product-card {
+    display: grid;
+    grid-template-columns: 160px 80px;
+    grid-template-rows: 240px 60px;
+    width: 240px;
+    height: 300px;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.image-product {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 240px;
+    height: 240px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.description-product{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 0px;
+    padding: 8px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.add-cart {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 8px;
+    margin: 0px;
+    justify-content: right;
+    cursor: pointer;
+}
+
+.price {
+    font-size: var(--md);
+    font-weight: 700;
+    margin: 0px;
+}
+
+.name-product {
+    font-size: var(--sm);
+    font-weight: 300;
+    color: var(--very-light-pink);
+    margin: 0px;
+    margin-top: 5px;
+}
 
 @media (max-width: 821px) {
     .logo {
@@ -182,4 +248,31 @@ body{
         position: absolute;
         bottom: 10px;
     }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 140px);
+        place-content: center;
+        justify-items: center;
+        gap: 20px;
+        grid-auto-flow: row;
+    }
+
+    .product-card {
+        display: grid;
+        grid-template-columns: 92px 46px;
+        grid-template-rows: 138px 60px;
+        width: 138px;
+        height: 198px;
+        align-items: flex-start;
+        border-radius: 8px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .image-product {
+        width: 138px;
+        height: 138px;
+        border-radius: 8px;
+    }
+
 }
