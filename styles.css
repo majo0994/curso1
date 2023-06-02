@@ -13,7 +13,6 @@
 
 body{
     margin: 0;
-    font-family: 'Kanit', sans-serif;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -154,6 +153,38 @@ body{
     text-decoration: none;
 }
 
+.text-bold {
+    font-size: var(--md);
+    font-weight: 500;
+}
+
+.text-1 {
+    font-size: var(--md);
+    font-weight: 700;
+    color: var(--black);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.text-2 {
+    font-size: var(--sm);
+    font-weight: 500;
+    color: var(--hospital-green);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.list-1 {
+    margin: 10px;
+    padding-bottom: 5px;
+}
+
+.list-2 {
+    margin: 10px;
+    border-top: 1px solid var(--very-light-pink);
+    padding-top: 28px;
+}
+
 .secondary-button {
     width: 290px;
     height: 48px;
@@ -234,6 +265,17 @@ body{
     color: var(--very-light-pink);
     margin: 0px;
     margin-top: 5px;
+}
+
+.menu-container {
+    text-align: end;
+    width: 120px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 4px;
+    list-style: none;
+    padding: 15px;
+    margin: 0;
 }
 
 @media (max-width: 821px) {
