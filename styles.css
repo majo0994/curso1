@@ -162,7 +162,6 @@ body{
     font-size: var(--md);
     font-weight: 700;
     color: var(--black);
-    cursor: pointer;
     text-decoration: none;
 }
 
@@ -170,7 +169,6 @@ body{
     font-size: var(--sm);
     font-weight: 500;
     color: var(--hospital-green);
-    cursor: pointer;
     text-decoration: none;
 }
 
@@ -306,6 +304,43 @@ body{
     bottom: 0;
 }
 
+.my-order-menu {
+    display: grid;
+    place-items: center;
+}
+
+.image-product-card {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.my-orders-container{
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    width: 500px;
+    height: 100px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: var(--text-input-field);
+}
+
+.price-total {
+    align-self: center;
+}
+
+.card-order {
+    display: grid;
+    grid-template-columns: 100px 1fr 40px;
+    align-items: center;
+    gap: 15px;
+    width: 500px;
+    height: 100px;
+    margin: 20px;
+}
+
 @media (max-width: 821px) {
     .logo {
        display: block;
@@ -339,10 +374,26 @@ body{
         margin-top: 5px;
         margin-bottom: 5px;
     }
+
     .image-product {
         width: 138px;
         height: 138px;
         border-radius: 8px;
+    }
+
+    .my-orders-container{
+        width: 300px;
+    }
+
+    .card-order {
+        gap: 10px;
+        width: 300px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    .name-product {
+        font-size: var(--md);
     }
 
 }
