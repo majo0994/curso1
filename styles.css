@@ -16,6 +16,52 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
+.title {
+    text-align: center;
+    font-size: var(--lg);
+    font-weight: 700;
+    color: var(--black);
+}
+
+.subtitle {
+    text-align: center;
+    font-size: var(--md);
+    font-weight: 300;
+    margin-bottom: 36px;
+    color: var(--very-light-pink);
+}
+
+.text-1 {
+    font-size: var(--md);
+    font-weight: 700;
+    color: var(--black);
+    margin: 0;
+    text-decoration: none;
+}
+
+.text-2 {
+    font-size: var(--sm);
+    font-weight: 500;
+    color: var(--hospital-green);
+    margin: 0;
+    text-decoration: none;
+}
+
+.text-3 {
+    font-size: var(--sm);
+    font-weight: 300;
+    margin: 0;
+    color: var(--black);
+}
+
+.text-4 {
+    font-size: var(--sm);
+    font-weight: 300;
+    color: var(--very-light-pink);
+    margin: 0px;
+    margin-top: 5px;
+}
+
 .login {
     display: grid;
     place-items: center;
@@ -42,26 +88,6 @@ body{
     justify-self: center;
     width: 150px;
     margin-bottom: 48px;
-}
-
-.title {
-    text-align: center;
-    font-size: var(--lg);
-    color: var(--black);
-}
-
-.title-2 {
-    text-align: start;
-    font-size: var(--lg);
-    color: var(--black);
-}
-
-.subtitle {
-    text-align: center;
-    font-size: var(--md);
-    font-weight: 300;
-    margin-bottom: 36px;
-    color: var(--very-light-pink);
 }
 
 .form {
@@ -116,6 +142,20 @@ body{
     cursor: pointer;
 }
 
+.secondary-button {
+    width: 290px;
+    height: 48px;
+    border-radius: 8px;
+    border: 2px solid var(--hospital-green);
+    margin-top: 100px;
+    font-size: var(--md);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: var(--hospital-green);
+    background-color: var(--white);
+    cursor: pointer;
+}
+
 .icon-background{
     display: flex;
     align-items: center;
@@ -153,31 +193,6 @@ body{
     text-decoration: none;
 }
 
-.text-bold {
-    font-size: var(--md);
-    font-weight: 500;
-}
-
-.text-1 {
-    font-size: var(--md);
-    font-weight: 700;
-    color: var(--black);
-    text-decoration: none;
-}
-
-.text-2 {
-    font-size: var(--sm);
-    font-weight: 500;
-    color: var(--hospital-green);
-    text-decoration: none;
-}
-
-.text-3 {
-    font-size: var(--sm);
-    font-weight: 300;
-    color: var(--black);
-}
-
 .list-1 {
     margin: 10px;
     padding-bottom: 5px;
@@ -187,20 +202,6 @@ body{
     margin: 10px;
     border-top: 1px solid var(--very-light-pink);
     padding-top: 48px;
-}
-
-.secondary-button {
-    width: 290px;
-    height: 48px;
-    border-radius: 8px;
-    border: 2px solid var(--hospital-green);
-    margin-top: 100px;
-    font-size: var(--md);
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    color: var(--hospital-green);
-    background-color: var(--white);
-    cursor: pointer;
 }
 
 .cards-container {
@@ -257,20 +258,6 @@ body{
     cursor: pointer;
 }
 
-.price {
-    font-size: var(--md);
-    font-weight: 700;
-    margin: 0px;
-}
-
-.name-product {
-    font-size: var(--sm);
-    font-weight: 300;
-    color: var(--very-light-pink);
-    margin: 0px;
-    margin-top: 5px;
-}
-
 .menu-container {
     text-align: end;
     width: 120px;
@@ -307,6 +294,12 @@ body{
 .my-order-menu {
     display: grid;
     place-items: center;
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+}
+.my-order-menu p:nth-child(1) {
+   justify-self: start;
 }
 
 .image-product-card {
@@ -340,6 +333,34 @@ body{
     height: 100px;
     margin: 20px;
 }
+
+.my-orders {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.my-orders-list {
+    width: 500px;
+}
+
+.my-orders-element{
+    display: grid;
+    grid-template-columns: 1fr 40px 20px;
+    height: 80px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+}
+
+.my-orders-element figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
 
 @media (max-width: 821px) {
     .logo {
